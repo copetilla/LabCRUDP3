@@ -1,0 +1,408 @@
+{
+  "info": {
+    "_postman_id": "72258dd2-c527-4c01-a088-0e90d5de2ada",
+    "name": "lab1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20686764",
+    "_collection_link": "https://go.postman.co/collection/20686764-72258dd2-c527-4c01-a088-0e90d5de2ada?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Categorias",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categorias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categorias"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Categoria",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categorias/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categorias",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Categoria",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Tecnología desde user\",\r\n  \"descripcion\": \"Productos electrónicos\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categorias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categorias"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Categoria",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Tecnología updated 2\",\r\n  \"descripcion\": \"Productos electrónicos\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categorias/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categorias",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Categoria",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categorias/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categorias",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Productos",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Producto",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Teclado test\",\r\n  \"descripcion\": \"Teclado USB\",\r\n  \"precio\": 15000.00,\r\n  \"cantidadStock\": 10,\r\n  \"categoriaId\": 2\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Producto",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Teclado test\",\r\n  \"descripcion\": \"Teclado USB\",\r\n  \"precio\": 15000.00,\r\n  \"cantidadStock\": 10,\r\n  \"categoriaId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Producto",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Teclado updated\",\r\n  \"descripcion\": \"Teclado USB\",\r\n  \"precio\": 15000.00,\r\n  \"cantidadStock\": 10,\r\n  \"categoriaId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Producto",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCOWpQV3NMaHZqZ3BNT1BFUFN3S29Xd3AyNnJQUGxTTTJTVk9QTjZwblVvIn0.eyJleHAiOjE3OTE4NTM5NjQsImlhdCI6MTc5MTg1MzA2NCwianRpIjoib25ydHJvOjUwYzhhNGE2LTYzOTUtMGM5Yy04YmU2LTNkYjdiNzgxNTc0ZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODE4MC9yZWFsbXMvbGFiMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhYjEtYXBpIiwic2lkIjoiZjhiZGQxZWYtZTg2Mi0xN2VmLTA0NjItNTAwN2Y3OWJlMTYwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlVTRVIiXX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiVXN1YXJpbyBMYWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c3VhcmlvIiwiZ2l2ZW5fbmFtZSI6IlVzdWFyaW8iLCJmYW1pbHlfbmFtZSI6IkxhYiIsImVtYWlsIjoidXN1YXJpb0BleGFtcGxlLmNvbSJ9.CKTQ9y47B9IeC3CB_gvD6qfR3yHSQnGQgFPGnz5kFqtIK7Pnbx8AZFAVPSB_6A8fbkiNFFtaxiYQkn0ScSX6TXGXqSakpWPFdzRcCU4s3F8IClpCqnez1DP5snsjIovLmT0L8CVfT3ELC-f6Us__Tob4BE6_lODnNt2KmHSMbv-wtsszRh4XlK1GdYrhpveI3dgCd4kfhJhftZMufBLX_pUpsbPL8WSE3f9vJoF6_subH6SPOddLT6HuGLrb4XwxIXc8hRPoihVExS9ujHC24WWMwegrAWtKz9SQwHBi91iXdk-5xcHUKzLlqPhvniysP_uGC_j5kIiK_CWOCasZYQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Teclado test\",\r\n  \"descripcion\": \"Teclado USB\",\r\n  \"precio\": 15000.00,\r\n  \"cantidadStock\": 10,\r\n  \"categoriaId\": 2\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"superadmin\",\r\n  \"password\": \"admin123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

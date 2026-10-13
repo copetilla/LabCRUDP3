@@ -1,0 +1,34 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root_dev
+      MYSQL_DATABASE: laboratorio1
+      MYSQL_USER: labadmin
+      MYSQL_PASSWORD: "labadmin"
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # Servidor de identidad (Auth broker). Emite los tokens JWT que la API valida.
+  # Consola de administración: http://localhost:8180  (admin / admin)
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.4
+    container_name: keycloak
+    # start.sh ejecuta "kc.sh start-dev --import-realm":
+    #   start-dev: modo desarrollo (HTTP, sin cache de temas, BD embebida)
+    #   --import-realm: importa los realms en /opt/keycloak/data/import al arrancar
+    # y además permite HTTP en el realm master para poder entrar a la consola.
+    entrypoint: [ "/bin/bash", "/opt/keycloak/start.sh" ]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+    ports:
+      - "8180:8080"
+    volumes:
+      - ./keycloak/realm-lab1.json:/opt/keycloak/data/import/realm-lab1.json:ro
+      - ./keycloak/start.sh:/opt/keycloak/start.sh:ro
+
+volumes:
+  mysql_data:
